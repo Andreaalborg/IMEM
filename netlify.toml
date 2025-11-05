@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Anbefalt Node-versjon for Next.js 16
+[build.environment]
+  NODE_VERSION = "20"
+
